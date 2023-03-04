@@ -1,0 +1,14 @@
+lit=0
+gei=0
+while True:
+    n=input()
+    if n !='q':
+        lit += float(n)
+        gei += 1
+    elif gei == 0:
+        print("No Data")
+        break
+    else:
+        avg=lit/gei
+        print(round(avg,2))
+        break
