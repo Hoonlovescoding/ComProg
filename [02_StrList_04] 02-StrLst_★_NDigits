@@ -1,0 +1,5 @@
+m=input()
+n=int(input())
+ans=n-len(m)
+
+print(ans*'0'+m)
