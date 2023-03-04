@@ -1,0 +1,27 @@
+score=input()
+a=score.split()
+a=list(map(float,a))
+
+mx=a[0]
+mn=a[0]
+
+if mx < a[1]:
+    mx = a[1]
+if mx < a[2]:
+    mx = a[2]
+if mx < a[3]:
+    mx = a[3]
+
+if mn > a[1]:
+    mn = a[1]
+if mn > a[2]:
+    mn = a[2]
+if mn > a[3]:
+    mn = a[3]
+
+a.pop(a.index(mx))
+a.pop(a.index(mn))
+
+ans=(a[0]+a[1])/2
+
+print(round(ans,2))
