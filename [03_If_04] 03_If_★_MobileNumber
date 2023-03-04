@@ -1,0 +1,5 @@
+n=input()
+
+if len(n) == 10 and n[0] == '0' and n[1] in ['6','8','9']:
+    print('Mobile number')
+else: print('Not a mobile number')
