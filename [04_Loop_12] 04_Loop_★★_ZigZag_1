@@ -1,0 +1,16 @@
+n = int(input())
+red = [0]*n
+blue = [0]*n
+for i in range(n):
+  x, y = input().split()
+  x = int(x)
+  y = int(y)
+  if i%2 == 1:
+      x, y = y, x
+  red[i]=x
+  blue[i]=y
+  
+zz = input()
+if zz == 'Zag-Zig':
+    red, blue = blue, red
+print(min(red), max(blue))
