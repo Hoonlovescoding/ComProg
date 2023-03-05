@@ -1,0 +1,13 @@
+s = input()
+e = s[0]
+c = 1
+out = ''
+for x in s[1:]:
+  if x == e:
+    c += 1
+  else:
+    out += e + ' ' + str(c) + ' '
+    e = x
+    c = 1
+out += e + ' ' + str(c)
+print(out)
